@@ -1,0 +1,129 @@
+
+
+#compilation-browser {
+	font-family: Helvetica;
+	margin: 40px auto;
+	max-width: 1080px;
+}
+
+.axis path,
+.axis line {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.axis .tick text {
+	font-size: 12px;
+}
+
+.week-bar {
+	fill: #9BCDEF;
+	fill-opacity: 0;
+
+}
+
+.week-bar.hover {
+	fill-opacity: 1;
+}
+
+.brush .extent {
+	stroke: #AB4C3E;
+	fill-opacity: .6;
+	shape-rendering: crispEdges;
+	fill: url(#diagonalHatch)
+}
+
+
+.emphasized-circle {
+	fill: red;
+	fill-opacity: .2;
+	shape-rendering: auto;
+}
+
+.bulletin-table {
+	border-collapse: collapse;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.bulletin-table tr td {
+	border-bottom: 1px solid #EFEFEF;
+	padding: 3px;
+	font-size: 12px;
+}
+
+.bulletin-table tr td:first-child {
+	width: 150px;
+}
+
+.bulletin-table tr:last-child td {
+	border-bottom-width: 0;
+}
+
+.bulletin-table tr:nth-child(even) td {
+	background-color: #F9F9F9
+}
+
+.bulletin-table.emphasized tr:not(.emphasis-high) {
+	display: none;
+}
+
+.bulletin-table tr.emphasis-high td {
+	border-color: #e51c30;
+	background-color: #e51c30;
+	color: white;
+	vertical-align: top;
+	/*font-weight: bold;*/
+}
+
+.bulletin-table.emphasized tr td:nth-child(2) {
+	font-size: 20px;
+}
+
+.bulletin-media div {
+	float: left;
+}
+
+
+.bulletin-media img {
+	width: 100%;
+}
+
+.bulletin-media {
+	display: flex;
+	flex-flow: row wrap;
+	margin-bottom: 30px;
+	overflow: hidden;
+
+}
+
+.bulletin-media div {
+	flex: 0 0 25%;
+}
+
+.toggle-form {
+	float: right;
+	margin-bottom: 15px;
+}
+
+.toggle-form input {
+	background: none;
+	border: 1px solid #EFEFEF;
+}
+
+.toggle-form input:first-child {
+	border-right-width: 0;
+}
+
+.toggle-form .selected {
+	background-color: #EFEFEF;
+}
+
+.compilation-graph {
+	margin-bottom: 1em;
+}
+
+.year-tick {
+	font-weight: bold;
+}
