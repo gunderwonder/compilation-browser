@@ -305,7 +305,7 @@ function renderCompilation(data, element) {
 			var images = [];
 			selectedBulletins.forEach(function(v) {
 				v.relations.forEach(function(r) {
-					if (r._type == 'ImageReference')
+					if (r._type == 'ImageReference' || r.modelType == 'ImageReference')
 						images.push(r);
 				});
 			});
